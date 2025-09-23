@@ -1,0 +1,165 @@
+ /* --- General Page Styles (Dark Theme) --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #1a1a2e;
+            /* Dark navy/purple background */
+            color: #e0e0e0;
+            /* Off-white text for readability */
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* --- Main Container & Layout --- */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #2d2d3a;
+            /* Slightly lighter dark container */
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #00f2ea;
+            /* Neon cyan border */
+            box-shadow: 0 0 25px rgba(0, 242, 234, 0.2);
+            /* Neon cyan glow */
+        }
+
+        header,
+        footer {
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #4a4a6a;
+            /* Subtle separator */
+        }
+
+        /* --- Typography with Neon Accents --- */
+        h1 {
+            color: #00f2ea;
+            /* Neon Cyan */
+            text-shadow: 0 0 5px rgba(0, 242, 234, 0.7);
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #00f2ea;
+            border-bottom: 2px solid #00f2ea;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        footer h6 {
+            color: #888;
+            font-weight: normal;
+        }
+
+        /* --- Form Structure & Spacing --- */
+        form ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        form article {
+            margin-bottom: 25px;
+        }
+
+        /* --- Dark Form Element Styles --- */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #c5c6c7;
+            /* Lighter grey for labels */
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: #3f3f5a;
+            /* Dark input background */
+            color: #e0e0e0;
+            border: 1px solid #5f5f7a;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* --- Neon Focus Style for Inputs --- */
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #ff00ff;
+            /* Contrasting Neon Magenta */
+            box-shadow: 0 0 8px rgba(255, 0, 255, 0.6);
+            outline: none;
+        }
+
+        /* --- Radio & Checkbox Specific Styles --- */
+        article ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 12px;
+            width: auto;
+            flex-shrink: 0;
+            accent-color: #00f2ea;
+            /* Neon cyan for the check/dot */
+        }
+
+        article ul li label {
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+
+        /* --- Neon Submit Button --- */
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: transparent;
+            color: #00f2ea;
+            border: 2px solid #00f2ea;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            text-shadow: 0 0 3px rgba(0, 242, 234, 0.7);
+            transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #00f2ea;
+            color: #1a1a2e;
+            /* Swaps to the dark bg color for text */
+            box-shadow: 0 0 20px rgba(0, 242, 234, 0.5);
+            text-shadow: none;
+            transform: translateY(-2px);
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            main {
+                padding: 20px;
+            }
+        }

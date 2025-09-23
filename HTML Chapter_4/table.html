@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tables </title>
+</head>
+
+<body>
+    <style>
+        /* General Table Styling */
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 24px auto;
+            box-shadow: 0 1px 8px #ccc;
+            background: #fafcff;
+        }
+
+        /* Header Cells */
+        th {
+            background-color: #05668d;
+            color: #fff;
+            padding: 14px 20px;
+            text-align: center;
+            font-size: 1.1em;
+            border-bottom: 2px black;
+        }
+
+        /* Data Cells */
+        td {
+            background-color: #e6f7ff;
+            color: #222;
+            padding: 12px 18px;
+            text-align: center;
+            border-bottom: 1px black;
+            font-size: 1em;
+        }
+
+        /* Table Rows: Zebra Striping */
+        tr:nth-child(even) td {
+            background-color: #d9f3ff;
+        }
+
+        /* Remove unwanted border on the last row */
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Table Section Styling */
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Optional: Header and Footer */
+        header h1,
+        footer h3 {
+            text-align: center;
+            color: #04547a;
+            letter-spacing: 2px;
+        }
+    </style>
+    <header>
+        <h1>
+            All about tables
+        </h1>
+    </header>
+
+    <main>
+        <section>
+            <table>
+                <article>
+                    <thead>
+                        <tr> <!-- (tr) stands for table row. -->
+                            <th>
+                                Name
+                            </th>
+
+                            <th>
+                                Role
+                            </th>
+
+                            <th> <!-- (th) stands for table header. -->
+                                Salary
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                </article>
+
+                <article>
+                    <thead>
+                        <tr>
+                            <th>
+                                Name_2
+                            </th>
+
+                            <th>
+                                Role_2
+                            </th>
+
+                            <th>
+                                Salary_2
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                </article>
+            </table>
+        </section>
+
+        <section>
+            <table>
+                <article>
+                    <thead>
+                        <tr>
+                            <td> <!-- (td) stands for table data. -->
+                                Rohan
+                            </td>
+
+                            <td>
+                                Ai Engineer
+                            </td>
+
+                            <td>
+                                $1000000
+                            </td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                </article>
+
+                <article>
+                    <thead>
+                        <tr>
+                            <td>
+                                Rahul
+                            </td>
+
+                            <td>
+                                ML Engineer
+                            </td>
+
+                            <td>
+                                $2000000
+                            </td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                </article>
+
+                <article>
+                    <thead>
+                        <tr>
+                            <td colspan="3">               <!-- (colspan) is an attribute of table data (td) tag which is used to specify the no. of rows that the particular word/line would take. -->
+                                Thanks_You
+                            </td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                </article>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <h3>
+            All about HTML
+        </h3>
+    </footer>
+</body>
+
+</html>

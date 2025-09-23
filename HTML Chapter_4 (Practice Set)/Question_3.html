@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Question_3 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Vacation Planning
+        </h1>
+    </header>
+
+    <main>
+        <hr>
+        <form action="/submit.php">
+            <section>
+                <h3>
+                    <p> 1. Please enter the details of the person making the booking here </p>
+                </h3>
+                <ul>
+                    <article>
+                        <div>
+                            <li>
+                                <lable for="first_name">First_Name</lable>
+                                <input id="first_name" type="text" placeholder="Enter your first name" required>
+                            </li>
+                        </div>
+                    </article>
+
+                    <br>
+
+                    <article>
+                        <div>
+                            <li>
+                                <lable for=last_name">Last_Name</lable>
+                                <input id=last_name" type="text" placeholder="Enter your last name" required>
+                            </li>
+                        </div>
+                    </article>
+
+                    <br>
+
+                    <article>
+                        <div>
+                            <li>
+                                <lable for="phone">Phone no</lable>
+                                <input id="phone" type="tel" placeholder="Enter your phome no" pattern="[0-9]{10}"
+                                    required>
+                            </li>
+                        </div>
+                    </article>
+
+                    <br>
+
+                    <article>
+                        <div>
+                            <li>
+                                <lable for="email">Email</lable>
+                                <input id="email" type="email" placeholder="Enter your email" required>
+                            </li>
+                        </div>
+                    </article>
+
+                    <br>
+
+                    <article>
+                        <div>
+                            <li>
+                                <lable for="dob">Date Of Birth</lable>
+                                <input id="dob" type="date" placeholder="Enter your Birthday" required>
+                            </li>
+                        </div>
+                    </article>
+
+                    <br>
+
+                    <article>
+                        <div>
+                            <li>
+                                <lable for="gender">Gender</lable>
+                                <select id="gender" placeholder="Select your gender" required>
+                                    <option value="" disabled selected>Select gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="transgender">Transgender</option>
+                                    Select your gender
+                                </select>
+                            </li>
+                        </div>
+                    </article>
+                </ul>
+
+                <br>
+
+                <h3>
+                    <p> 2. Total number of heads(excluding aged<10) </p>
+                </h3>
+
+                <article>
+                    <ul>
+                        <div>
+                            <li>
+                                <input id="2" type="radio" name="heads" value="2">
+                                <lable for="2">2</lable>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <input id="4" type="radio" name="heads" value="4">
+                                <lable for="4">4</lable>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <input id="6" type="radio" name="heads" value="6">
+                                <lable for="6">6</lable>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <input id="8" type="radio" name="heads" value="8">
+                                <lable for="8">8</lable>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <input id="10" type="radio" name="heads" value="10">
+                                <lable for="10">10</lable>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+                <article>
+                    <div>
+                        <h3>
+                            <p> 3. Enter the total number of males </p>
+                        </h3>
+                    </div>
+                </article>
+
+                <br>
+
+                <article>
+                    <ul>
+                        <div>
+                            <li>
+                                <lable for="textarea" required>Male Count</lable>
+                                <textarea value="textarea" type="num" placeholder="Enter the total number of male haeds"
+                                    required rows="5" cols="10"></textarea>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+                <br>
+
+                <article>
+                    <div>
+                        <h3>
+                            <p> 4. Enter the total number of females </p>
+                        </h3>
+                    </div>
+                </article>
+
+                <br>
+
+                <article>
+                    <ul>
+                        <div>
+                            <li>
+                                <lable for="textarea" required>Female Count</lable>
+                                <textarea value="textarea" type="num"
+                                    placeholder="Enter the total number of female haeds" required rows="5"
+                                    cols="10"></textarea>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+                <br>
+
+                <article>
+                    <div>
+                        <h3>
+                            <p> 5. Enter the total number of children(aged<10) </p>
+                        </h3>
+                    </div>
+                </article>
+
+                <br>
+
+                <article>
+                    <ul>
+                        <div>
+                            <li>
+                                <lable for="textarea" required>Children Count</lable>
+                                <textarea value="textarea" type="num"
+                                    placeholder="Enter the total number of children haeds" required rows="5"
+                                    cols="10"></textarea>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+                <br>
+
+                <article>
+                    <div>
+                        <h3>
+                            <p> 6. What's your destination? </p>
+                        </h3>
+                    </div>
+                </article>
+
+                <article>
+                    <ul>
+                        <div>
+                            <li>
+                                <input id="overseas" type="radio" name="destination" value="overseas">
+                                <lable for="overseas">Overseas</lable>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+                <br>
+
+                <article>
+                    <ul>
+                        <div>
+                            <li>
+                                <input id="inland" type="radio" name="destination" value="inland">
+                                <lable for="inland">Inland</lable>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+                <br>
+
+                <article>
+                    <ul>
+                        <div>
+                            <li>
+                                <lable for="dos">Date Of Start</lable>
+                                <input id="dos" type="date" placeholder="Enter tour start date" required>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+                <br>
+
+                <article>
+                    <ul>
+                        <div>
+                            <li>
+                                <lable for="doe">Date Of End</lable>
+                                <input id="doe" type="date" placeholder="Enter tour end date" required>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+                <br>
+
+                <h3>
+                    <p> 7. Types of Rooms </p>
+                </h3>
+                <article>
+                    <ul>
+                        <div>
+                            <li>
+                                <input id="AC(without smoking)" type="checkbox" name="room_type"
+                                    value="AC(without smoking)">
+                                <lable for="AC(without smoking)">AC(without smoking)</lable>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <input id="NON-AC(without smoking)" type="checkbox" name="room_type"
+                                    value="NON-AC(without smoking)">
+                                <lable for="NON-AC(without smoking)">NON-AC(without smoking)</lable>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <input id="AC(with smoking)" type="checkbox" name="room_type" value="AC(with smoking)">
+                                <lable for="AC(with smoking)">AC(with smoking)</lable>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <input id="NON-AC(with smoking)" type="checkbox" name="room_type"
+                                    value="NON-AC(with smoking)">
+                                <lable for="NON-AC(with smoking)">NON-AC(with smoking)</lable>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+                <br>
+
+                <h3>
+                    <p> 8.Choose your payment method </p>
+                </h3>
+
+                <article>
+                    <ul>
+                        <div>
+                            <li>
+                                <input id="upi" type="radio" name="payment" value="upi">
+                                <lable for="upi">UPI</lable>
+                            </li>
+                        </div>
+
+                        <div>
+                            <li>
+                                <input id="debit card" type="radio" name="payment" value="debit card">
+                                <lable for="debit card">DEBIT CARD</lable>
+                            </li>
+                        </div>
+
+                        <div>
+                            <li>
+                                <input id="credit card" type="radio" name="payment" value="credit card">
+                                <lable for="credit card">CREDIT CARD</lable>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+                <br>
+
+                <article>
+                    <ul>
+                        <div>
+                            <li>
+                                <input id="tick" type="checkbox" required>
+                                <lable for="tick">Check the box if any extra accomodation facilities required</lable>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+                <br>
+
+                <article>
+                    <ul>
+                        <div>
+                            <li>
+                                <lable for="textarea" required>Extra Requirements</lable>
+                                <textarea value="textarea" type="text"
+                                    placeholder="Enter what you need extra in our services" required rows="5"
+                                    cols="10"></textarea>
+                            </li>
+                        </div>
+                    </ul>
+                </article>
+
+            </section>
+
+            <section>
+                <article>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </article>
+            </section>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <h6>
+            2025@All Rights Reserved
+        </h6>
+    </footer>
+</body>
+
+</html>

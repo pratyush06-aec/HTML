@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms </title>
+</head>
+
+<body>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 24px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+        }
+
+        form div {
+            margin-bottom: 14px;
+        }
+
+        label,
+        lable {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #c7c8cc;
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            display: inline-block;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        button[type="submit"] {
+            background: #1a73e8;
+            color: #fff;
+            border: none;
+            padding: 11px 32px;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.25s;
+        }
+
+        button[type="submit"]:hover {
+            background: #1558b0;
+        }
+
+        ::placeholder {
+            color: #bdbdbd;
+            font-size: 0.98em;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #1a73e8;
+            outline: none;
+        }
+
+        p {
+            margin-top: 8px;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+    </style> -->
+    <header>
+
+    </header>
+
+    <main>
+        <form action="/submit.php">                    <!-- It submits the link in the backend. (.php) is a backend extension. -->
+            <br>
+            <div>
+                <lable for="name">Name</lable>
+                <input id="name" type="text" placeholder="Enter your name" required>               <!-- (required) is an attribute. It's used to mentioned something as important, without which the form would not be submitted. -->
+            </div>
+            <br>
+            <div>
+                <lable for="email">Email</lable>
+                <input id="email" type="email" placeholder="Enter your email" required>                  <!-- (placeholder) is an attribute which would be dispalyed on anything before the user input. -->
+            </div>
+            <br>
+            <div>
+                <lable for="tel">Phone no</lable>
+                <input id="tel" type="tel" placeholder="Enter your phone number" required>              <!-- (type-"tel") is used to take telephone no. as user input. -->
+            </div>
+            <br>
+            <div>
+                <lable for="dob">Date Of Birth</lable>
+                <input id="dob" type="date" placeholder="Enter your date of birth" required>          <!-- (type-"date") is used to provide the user with a calender to fill any date. -->
+            </div>
+            <br>
+            <div>
+                <lable for="password">Password</lable>
+                <input id="password" type="password" placeholder="Enter your password" required>
+            </div>
+            <br>
+            <div>
+                <lable for="gender">Gender</lable>
+                <select id="gender" placeholder="Select your gender" required>
+                    <option value="" disabled selected>Select gender</option>             <!-- (disabled selected) is used to display something to user as selected by default and they can't fill it as their input. -->
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Transgender">Transgender</option>                       <!-- (option) tag is used to provide the user with a dropdown of options to select from. -->
+            </div>
+            <br>
+            <div>
+                <p> Subscription Plan</p>
+
+                <input id="basic" type="radio" name="subscription" value="basic">                  <!-- if the (id & for) are same, then the user can select it by tapping on the line/word that is displayed related to it. -->
+                <lable for="basic">Basic</lable>
+
+                <input id="premium" type="radio" name="subscription" value="premium">              <!-- if (name) is same for all the options then the user can select only one among them as their input. In other words, the form would take only one of them as the user input, if the name of all of them are same. -->
+                <lable for="premium">Premium</lable>
+
+                <input id="vip" type="radio" name="subscription" value="vip">                   <!-- (radio) is used to provide the user with the small circles to fill in to record their inputs. -->
+                <lable for="vip">VIP</lable>
+            </div>
+            <br>
+            <div>
+                <input id="tick" type="checkbox" required>                                    <!-- (checkbox) provides a box to tick, in order to show as agreed upon something. -->
+                <lable for="tick">I agree to the terms and conditions</lable>
+            </div>
+            <br>
+            <div>
+                <lable for="textarea"></lable>
+                <textarea id="textarea" type="text" placeholder="Enter your message here" required row="5"               
+                    col="10"></textarea>                                                                                  <!-- (rows & cols) are used to let the users adjust the textarea according to their requirements. -->
+            </div>
+            <br>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
